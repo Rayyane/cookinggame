@@ -2,7 +2,9 @@ const fill = document.querySelector('.fill');
 const empties = document.querySelectorAll('.empty');
 
 fill.addEventListener('dragstart', dragStart);
+fill.addEventListener('touchmove', dragStart);
 fill.addEventListener('dragend', dragEnd);
+fill.addEventListener('touchend', dragEnd);
 
 //loop through the empties 
 for (const empty of empties) {
